@@ -1,0 +1,24 @@
+<template name="Games">
+	<div class="container">
+	{{#if count}}
+		{{> NewGame}}
+	{{/if}}
+		<table class="table table-hover">
+			<thead class="thead-inverse">
+				<tr>
+					<th> </th>
+					<th> Turn </th>
+					<th> Name </th>
+					<th> Points </th>
+					<th> Roll </th>
+					<th> Message </th>
+				</tr>
+			</thead>
+			<tbody>
+					{{> Players}}
+			</tbody>
+		</table>
+		<button class="btn btn-warning">New Game</button>
+	</div>
+</template>
+

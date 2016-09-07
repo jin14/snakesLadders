@@ -1,0 +1,12 @@
+<template name="Players">
+	{{#each players}}
+	<tr class="success">
+		<td><button class="btn btn-danger"> Remove </button></td>
+		<td>{{turn}}</td>
+		<td>{{name}}</td>
+		<td>{{points}}</td>
+		<td><button class="btn btn-primary" id='{{id}}' disabled="disabled">Roll!</button></td>
+		<td>{{message}}</td>
+	</tr>
+	{{/each}}
+</template>

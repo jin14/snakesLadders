@@ -1,0 +1,20 @@
+<template name="MainLayout">
+	<header>
+		<div class="container">
+			<h1> Snakes and Ladders </h1>
+			<h3> Rules & Instruction </h3>
+				<ol>
+					<li> This game is meant for 4 players only. </li>
+					<li> Click New Game to start the game rolling (roll buttons will be enabled only if there are 4 different players).</li>
+					<li> Any player can choose to start first.</li>
+					<li> First to hit 100 will win the game! </li>
+					<li> Beware of hidden snakes and ladders! </li>
+					<li> Have Fun!</li>
+				</ol>
+		</div>
+	</header>
+	<main>
+		{{> Template.dynamic template=main}}
+	</main>
+
+</template>
